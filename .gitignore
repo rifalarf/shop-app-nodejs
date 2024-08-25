@@ -1,0 +1,34 @@
+# Dependency directories
+node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+
+# Build directories
+dist/
+build/
+
+# Cache directories
+.cache/
+.eslintcache
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
