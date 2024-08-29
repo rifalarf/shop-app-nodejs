@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            min-height: 100vh;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        .sidebar a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #34495e;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar">
+                <div class="profile text-center py-4">
+                    <img src="profile.jpg" alt="Administrator">
+                    <p class="mt-2">Administrator</p>
+                </div>
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Artikel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dosen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Masyarakat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pengabdian</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Permohonan</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <span class="text-muted">Administrator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards Section -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card text-white bg-info mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">3</h5>
+                                <p class="card-text">Alkel</p>
+                                <a href="#" class="btn btn-outline-light btn-sm">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-success mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">5</h5>
+                                <p class="card-text">Dosen</p>
+                                <a href="#" class="btn btn-outline-light btn-sm">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-warning mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">1</h5>
+                                <p class="card-text">Masyarakat</p>
+                                <a href="#" class="btn btn-outline-light btn-sm">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-danger mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">0</h5>
+                                <p class="card-text">Permohonan</p>
+                                <a href="#" class="btn btn-outline-light btn-sm">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

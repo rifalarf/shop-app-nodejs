@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= product.name %></title>
+</head>
+
+<body>
+    <h1><%= product.name %></h1>
+    <form action="/products" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" value="<%= product.name %>">
+        <label for="price">Price</label>
+        <input type="number" name="price" value="<%= product.price %>">
+        <label for="description">Description</label>
+        <textarea name="description" id="" cols="30" rows="10"><%= product.description %></textarea>
+        <label for="category">Category</label>
+        <select name="category">
+            <option value="Bakery" <%= product.category == 'Bakery' ? 'selected' : '' %>>Bakery</option>
+            <option value="Dessert" <%= product.category == 'Dessert' ? 'selected' : '' %>>Dessert</option>
+            <option value="Pastry" <%= product.category == 'Pastry' ? 'selected' : '' %>>Pastry</option>
+            <option value="Bread" <%= product.category == 'Bread' ? 'selected' : '' %>>Bread</option>
+        </select>
+        <button>ADD</button>
+    </form>
+</body>
+
+</html>

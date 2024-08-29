@@ -1,4 +1,4 @@
-const mongoose = require ('mongoose')
+const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
     name: {
@@ -14,12 +14,14 @@ const productSchema = new mongoose.Schema({
         minLength: 0,
         required: true
     },
-    size: {
+    category: {
         type: String,
-        enum: ['S', 'M', 'L', 'XL']
+        enum: ['Bakery', 'Dessert', 'Pastry', 'Bread'],  // Field category hanya bisa memiliki nilai yang ditentukan
+        required: true
     }
-})
+});
 
-const Product = mongoose.model('Product', productSchema)
+const Product = mongoose.model('Product', productSchema);
+
 
 module.exports = Product
