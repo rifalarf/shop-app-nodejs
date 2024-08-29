@@ -9,13 +9,19 @@
 
 <body>
     <h1><%= product.name %></h1>
+    
     <ul>
-        <li>Rp.<%= product.price %></li>
-        <li><%= product.description %></li>
-        <li><%= product.category %></li>
+        <li> Harga : Rp.<%= product.price %></li>
+        <li>Deskripsi : <%= product.description %></li>
+        <li>
+            Category : <a href="/products?category=<%= product.category %>"><%= product.category %></a>
+        </li>
     </ul>
     <a href="/products/<%= product._id %>/edit">Edit</a>
     <a href="/products">All Products</a>
+    <form action="/products/<%= product._id %>?_method=DELETE" method="post"><br>
+        <button>Delete</button>
+    </form>
 </body>
 
 </html>

@@ -8,8 +8,12 @@
 </head>
 
 <body>
-    <h1>List Products</h1>
+    <h1><%= category %> Products</h1>
     <a href="/products/create">Add a Product</a>
+    <% if (category !== 'All') { %>
+    <a href="/products">All Category</a>
+    <%} %>
+
     <ul>
         <% products.forEach(product => { %>
         <li>
